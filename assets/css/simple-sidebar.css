@@ -1,0 +1,145 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 290px;
+}
+
+#sidebar-wrapper {
+    z-index: 5;
+    position: fixed;
+    left: 290px;
+    width: 0;
+    height: 100%;
+    margin-left: -290px;
+    overflow-y: auto;
+    
+	background-color:#F1FAF5;
+
+	
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	box-shadow:0px 0px 5px #a1a1a1;
+	
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 290px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+	color:#707070;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -290px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: relative;
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-header-wrapper{
+	width:100%; 
+	height:150px; 
+	background: -webkit-linear-gradient(left, #95D196 , #46B476);
+	background: -o-linear-gradient(right, #95D196, #46B476);
+	background: -moz-linear-gradient(right, #95D196, #46B476); 
+	background: linear-gradient(to right, #95D196 , #46B476);
+	color:#fff;
+	
+	
+}
+
+.sidebar-header{
+	position:absolute;
+	top:20px;
+	left:87px;
+}
+
+.sidebar-header img{
+	border-radius:45px;
+}
+
+.sidebar-header a{
+	color:#fff;
+}
+
+.sidebar-nav li {
+    text-indent: 10px;
+    line-height: 50px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #505050;
+	
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+	background-color:#CDE8D8;
+    color: #4B8B4C;
+	padding-left:5px;
+	transition:padding-left 0.5s;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+	
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 290px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 290px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}

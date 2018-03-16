@@ -1,0 +1,44 @@
+body{
+    background-color:#303030;
+    background-size:100%;
+   
+}
+.admin-login-wrapper{
+    width: 359px;
+     background-color:#303030;
+    margin: 0px auto 0px auto;
+    position:relative;
+    top: 10%;
+    padding:30px;
+    border-radius:10px;
+}
+.admin-login-wrapper input{
+    width: 350px;
+    border:1px solid #404040;
+    padding:10px;
+    font-family:calibri;
+    outline:none;
+    margin:2px;
+}
+.admin-login-wrapper input[type="submit"] {
+    background-color:#454545;
+    color:#c1c1c1;
+}
+.admin-login-wrapper input[type="submit"]:hover {
+    background-color:#252525;
+    color:#fff;
+    border:1px solid #353535;
+}
+
+.admin-logo table{
+    width:100%;
+    margin-bottom: 30px;
+}
+.admin-logo td{
+    text-align:right;
+    font-family:Segoe UI Light;
+    color:#fff;
+}
+.admin-logo img{
+    width:100%;
+}

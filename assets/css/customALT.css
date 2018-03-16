@@ -1,0 +1,538 @@
+/* CUSTOM FONT--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@font-face {
+    font-family: customfont1;
+    src: url("http://localhost/belo/limitadophassets/eurocaps.ttf") format("opentype");
+}
+.form-control:focus {
+  border-color: #CFB614;
+  box-shadow:  0px 0px 8px #CFB614;
+}
+body {
+    overflow-x:hidden;
+    background: #e1e1e1; /* For browsers that do not support gradients */
+    font-family:Calibri;
+    background-image:url("http://localhost/belo/limitadophassets/images/bg.png");
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* SIDEBAR TOGGLE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.sidebar-toggle{
+    width:auto;
+    height:100%;
+    font-size:25px;
+    cursor:pointer;
+
+}
+
+.sidebar-toggle a{
+    color:#fff;
+
+}
+.sidebar-toggle a:hover{
+    color:#CFB614;
+}
+
+.product-navigation{
+    border-radius:0px;
+}
+
+.navbar{
+	
+}
+.navbar-toggle{
+    color:#fff;
+}
+.navbar-toggle:hover{
+    color:#fff;
+}
+.navbar-brand{
+    font-family:customfont1;
+}
+
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-family:customfont1;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #CFB614;
+}
+
+/* PRODUCT THUMBNAIL---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.product-container{
+    padding:0px 20px 0px 25px;
+}
+.productbox-wrapper{
+    padding:10px;
+	transition: padding 0.2s;
+}
+.productbox-wrapper:hover{
+    padding:5px;
+    transition: padding 0.2s;
+        
+}
+.productbox {
+    background-color:#fff;
+    padding:10px;
+    border:6px solid #E1C821;
+    box-shadow: 0 0px 6px #000;
+}
+.productbox img{
+    height:100%;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.producttitle {
+    font-weight:bold;
+    padding:5px 0 5px 0;
+    font-family:Customfont1;
+
+}
+
+.productprice {
+    border-top:1px solid #dadada;
+    padding-top:5px;
+    font-family:Customfont1;
+}
+
+.pricetext {
+    font-weight:bold;
+    font-size:1.2em;
+}
+
+.add-to-cart{
+    background: #CBB720;
+    color: #fff;
+    border-radius:0;
+    border:0px;
+}
+.add-to-cart:hover{
+    background-color:#A09018;
+    color:#fff;
+}
+
+/* WRAPPER FOR SIDEBAR AND PAGE-CONTENT--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top:51px;
+    position:relative;
+    z-index:1;
+    overflow:none;
+    
+    
+
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background-color:#CFB614;
+    background: -webkit-linear-gradient(left, #EAD131, #F6EF74);
+    background: -o-linear-gradient(right, #EAD131, #F6EF74);
+    background: -moz-linear-gradient(right, #EAD131, #F6EF74); 
+    background: linear-gradient(to right, #EAD131, #F6EF74); 
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    box-shadow:0px 0px 10px #000;
+}
+
+/* SIDEBAR--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.sidebar-nav {
+    position: absolute;
+    top: 250;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-brand{
+    padding:20px ;
+    width: 250px;
+}
+.sidebar-brand img {
+    width:100%;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 50px;
+}
+
+.sidebar-nav li a {
+    font-family:Customfont1;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+	transition:padding-left 0.3s;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color:#000;
+    padding-left:10px;
+    transition:padding-left 0.3s;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+
+}
+#wrapper.toggled{
+    margin-top:51px;
+
+}
+
+/* RESPONSIVE--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.logo{
+    width:100%;
+    display: block;
+    margin:0px auto 0px auto;
+    text-align:center;
+    background-color:#CFB614;
+    box-shadow:inset 0px 0px  100px #000;
+    
+}
+.logo img{
+    width:300px;
+	padding:30px 10px 30px 10px;
+}
+
+.logo.toggled{
+    width:0px;
+    display: none;
+}
+
+@media(min-width:768px) {
+	
+
+    .logo{
+        width:0px;
+        display: none;
+        margin:0px;
+    }
+
+    .logo.toggled{
+        width:100%;
+        display: block;
+    }
+
+    #wrapper {
+        padding-left: 250px;
+
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+        padding:0px;
+        
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+
+    }
+}
+
+
+
+/* PAGINATION STYLE--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.custom-pagination>li>a{
+    background-color:#CBB720;
+    color:#fff;
+}
+
+.custom-pagination>li>a:hover{
+    background-color:#74660E;
+    color:#fff;
+}
+.pagination>li>a:active{
+    background-color:#CBB720;
+    color:#fff;
+}
+.pagination>li>a:focus{
+    background-color:#CBB720;
+    color:#fff;
+}
+
+
+/* FOOTER--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.footer-black{
+    margin-top:50px;
+    text-align:center;
+    
+}
+
+/* CUSTOMED SCROLLBAR------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    background-color:#303030;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:#CFB614;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    border-radius:3px;
+}
+
+/* WEBSITE LOADING--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+#overlay{
+    position:fixed;
+    z-index:99999;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color:#000;
+    transition: 1s 0.1s;
+}
+#progress{
+    height:1px;
+    background:#fff;
+    position:absolute;
+    width:0;
+    top:50%;
+}
+#progstat{
+    font-size:15px;
+    font-family:Customfont1;
+    letter-spacing: 3px;
+    position:absolute;
+    top:50%;
+    margin-top:-40px;
+    width:100%;
+    text-align:center;
+    color:#fff;
+}
+
+/* PRODUCT MODAL--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.product-modal table{
+    width:100%;
+}
+
+.product-modal td{
+    padding:5px;
+
+}
+
+.product-modal tr:nth-child(1){
+    text-align:center;
+}
+
+.product-modal tr{
+    vertical-align:top;
+}
+
+.product-modal td:nth-child(1){
+    font-weight: bold;
+}
+
+.product-modal img{
+    width:50%;
+}
+
+.product-modal input,
+.product-modal select{
+    padding:3px;
+    font-size:14px;
+}
+
+.product-modal textarea{
+    resize: none;
+}
+
+/* LOGIN MODAL--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.login-modal{
+    padding:10px;
+}
+.g-recaptcha {
+    transform:scale(0.79);
+    transform-origin:0 0;
+}
+
+/* CUSTOM PANEL*/
+.panel-warning > .panel-heading {
+  color: #fff;
+   background-color:#CFB614;
+    background: -webkit-linear-gradient(left, #EAD131, #F6EF74);
+    background: -o-linear-gradient(right, #EAD131, #F6EF74);
+    background: -moz-linear-gradient(right, #EAD131, #F6EF74); 
+    background: linear-gradient(to right, #EAD131, #F6EF74); 
+  border-color: #ddd;
+  
+}
+.panel-warning{
+  border:0px;
+  box-shadow:0px 0px 5px #000;
+}
+/*custom button*/
+.btn-warning {
+    background: #B8A62F;
+    color: #fff;
+    border:0px;
+}
+.btn-warning:hover{
+    background: #918325;
+}
+
+/* DESIGN CONTEST BANNER*/
+.design-contest-banner{
+    background-color:#353535;
+    box-shadow:inset 0px 0px 50px #000;
+    font-family: customfont1;
+    color:#fff;
+}
+.design-contest-banner a{
+    margin-bottom:10px;
+    margin-top:10px;
+}
+.gray{
+    color:#a1a1a1;
+    
+}
+.yellow{
+    color:#B8A62F;
+}
+.calibri{
+    font-family: Calibri;
+}
+.text-wrapped{
+    text-align: justify;
+}
+
+/*MOBILE LANDING PAGE*/
+.mobile-app-wrapper{
+	background-color: rgba(230, 230 ,230, 0.7);
+}
+.mobile-app-text{
+	margin-top:10%;
+	margin-bottom:50px;
+}
+.img-phone{
+	width:90%;
+	margin-top:20px;
+	transition:all 0.8s;
+	
+}
+.img-phone:hover{
+	width:100%;
+	transition:all 0.8s;
+}
+
+.apk-btn{
+	width:150px;
+	opacity:0.8;
+	
+}
+.apk-btn:hover{
+	opacity:1;
+}
+
+@media only screen and (max-width: 990px) {
+    .mobile-app-text{
+        margin-top:0px;
+		text-align:center;
+    }
+}
+
+
+
+/* FEEDBACK*/
+section#contact {
+    background-color: #4F460C;
+    background-image: url('http://localhost/belo/limitadophassets/images/feedback3.png');
+    
+    font-family:customfont1;
+    padding-top:50px;
+    padding-bottom:50px;
+    box-shadow:inset 0px 0px 100px #000;
+    opacity:0.9;
+
+}
+section#contact:hover {
+    opacity:1;
+    transition:0.3s;
+}
+section#contact .section-heading {
+    color: #fff
+}
+
+section#contact .form-group {
+    margin-bottom: 25px
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 10px;
+    font-family:calibri;
+    font-size:13px;
+}
+
+
+section#contact .form-group input.form-control {
+    height: auto
+}
+
+
+section#contact .form-group textarea.form-control {
+    height: 236px
+}
+
+
+

@@ -1,0 +1,54 @@
+body{
+	font-family:calibri;
+}
+#tshirtFacing{
+    box-shadow:0px 0px 5px #000;
+    border-radius:5px;
+    
+}
+.shirt-colors{
+    padding:0px;
+    margin:0px;
+}
+.shirt-colors li {
+    box-shadow:0px 0px 3px #c1c1c1;
+	border-radius:1px;
+    zoom: 1;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    margin:1px;
+}
+.shirt-logos img{
+    width:100px;
+    height:100px;
+    border:#CCC solid 1px;
+    margin:5px;
+    cursor:pointer;
+}
+.shirt-preview{
+    width:100%;
+}
+.rotate {  
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    /* filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5); */
+    -ms-transform:rotate(90deg);		   
+}		
+.Arial{font-family:"Arial";}
+.Helvetica{font-family:"Helvetica";}
+.MyriadPro{font-family:"Myriad Pro";}
+.Delicious{font-family:"Delicious";}
+.Verdana{font-family:"Verdana";}
+.Georgia{font-family:"Georgia";}
+.Courier{font-family:"Courier";}
+.ComicSansMS{font-family:"Comic Sans MS";}
+.Impact{font-family:"Impact";}
+.Monaco{font-family:"Monaco";}
+.Optima{font-family:"Optima";}
+.HoeflerText{font-family:"Hoefler Text";}
+.Plaster{font-family:"Plaster";}
+.Engagement{font-family:"Engagement";}
